@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlySmooth-Home</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+			background-image:url("225.jpg");
+            background-size: cover;
+            height: 500px; 
+        }
+
+        #navlist {
+            background-color: black; 
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        #navlist a {
+            color: white;
+            padding: 8px 5px;
+            text-decoration: none;
+            text-align:left;     }
+
+        #navlist a:hover {
+            background-color: Gray;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input[type="text"] {
+            padding: 6px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            font-size: 17px;
+        }
+
+        .search button {
+            padding: 6px 10px;
+            background: white;
+            color: #4CAF50; /* Green text */
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .search button:hover {
+            background: #45a049; /* Darker green on hover */
+            color: white;
+        }
+        .center {
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            color:aliceblue;
+            
+            
+            }
+    </style>
+</head>
+<body>
+
+    <div id="navlist">
+		<a href="home.html"><h3>FlySmooth</h3></a>
+        <a href="home.html">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="contactus.html">Contact Us</a>
+
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search..." name="search">
+            <button id="searchButton" type="button"><i class="fa fa-search"></i> Search</button>
+            <button type="button" id="clearButton" onclick="document.querySelector('.search input').value = '';">Clear</button>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <div class="center">
+        
+        <h1>Discovering the<br> aesthetics of World <br>through journey</h1>
+        <p>We must not forget, though, while oohing and aahing about the natural world,<br> 
+            that none of it has evolved for us. That it is, in many ways, a marvelous coincidence that we would find any of it 
+            beautiful at all: flowers are not here purely for us to behold, trees do not grow because of us (more like
+             in spite of at this point), and as far as I know,<br> there are no measurable benefits 
+             to gazing at clouds. We, too, have evolved, have learned and been conditioned to appreciate many natural sceneries and forms
+             ,<br> although I’m not sure that the same could be said the other way around—if you asked a tree, would it find you beautifu
+             l?<br> If we could understand the discussions of sea creatures, would they have anything to say about the beauty of humans?
+             </p>
+    </div>
+    <div id="results"> </div>
+    <script src="home.js"></script>
+</body>
+</html>
